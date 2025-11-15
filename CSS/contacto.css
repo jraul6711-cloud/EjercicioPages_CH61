@@ -1,73 +1,174 @@
-html {
-    /* utilizar variables */
 
-    --fontTitle:"Raleway", sans-serif;
-    --generalFont:"Roboto Condensed", sans-serif;
-    --bgColor: #313647;
-    --hgColor: #FFF8D4;
-    --primaryColor:#A3B087;
-    --secondaryColor: #435663;
-    height: 300vh;
-}
 
-body {
-    background-color: var(--bgColor);
-    color: var(--hgColor)
-}
+    html {
 
-.pageTitle {
-    background-color:var(--bgColor);
-    font-family: var(--fontTitle);
-    color:var(--hgColor);
-    text-align: center;
-}
+        --fontTitle: "Raleway", sans-serif;
+        --generalFont: "Roboto Condensed", sans-serif;
+        --bgColor: black;
+        --navBarColor: crimson;
+        --hgColor: #fff8d4;
+        --primaryColor: #a3b087;
+        --secondaryColor: #435663;
+        --titleCardColor: lightgrey;
+        height: 150vh;
+    }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    background-color: var(--primaryColor);
-    border-radius: 10px;
-    padding: 20px 30px;
-    margin: 0 auto;
-}
+    body {
+        background-color: var(--bgColor);
+    }
 
-label {
-    display: block;
-    font-family: var(--generalFont);
-    font-weight: bold;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
+    .pageTitle {
+        background-color: var(--bgColor);
+        font-family: var(--fontTitle);
+        color: var(--hgColor);
+        text-align: center;
+    }
 
-input, textarea {
-    width: 200px;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
+    #mainTitle {
+        font-size: 50px;
+    }
 
-button {
-    width: 100px;
-    background-color: var(--hgColor);
-    color:black;
-    border: none;
-    padding: 10px;
-}
+    .navbar .navbar-brand {
+        position: relative;
+        left: 10%;
+        transform: translateX(-50%);
+    }
 
-section {
-    padding-bottom: 30px;
-    display: block;
-    text-align: center;
-}
+    nav.navbar {
+        background-color: var(--navBarColor) !important;
+        display: flex !important;
+        border-top: 5px solid var(--secondaryColor);
+        border-bottom: 5px solid var(--secondaryColor);
+    }
 
-h1, li, p , a {
-    font-family: var(--generalFont);
-    text-align: center;
-    color: var(--hgColor);
-}
+    ul.navbar-nav {
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-a:hover {
-    font-size: 20px;
-    padding: 10px;
-}
+    ul#navLinks {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: end;
+    }
+
+    a {
+        font-size: 20px;
+        color: var(--hgColor);
+        text-decoration: none;
+        /* background-color: var(--hgColor); */
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    a.navbar-brand {
+        background-color: var(--secondaryColor);
+        color: var(--hgColor) !important;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    a.nav-link {
+        color: var(--hgColor) !important;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    a:hover {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    a.nav-link:hover {
+        color: var(--hgColor) !important;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    a.navbar-brand:hover {
+        font-size: 35px;
+        padding: 10px;
+    }
+
+    h2, h2.pageTitle {
+        background-color: var(--navBarColor);
+        color: var(--hgColor);
+        border-top: 5px solid var(--secondaryColor);
+        border-bottom: 5px solid var(--secondaryColor);
+        padding: 5px;
+        margin-top: 80px;
+    }
+
+    h4 {
+        color: var(--hgColor);
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    a#Aviso {
+        background-color: var(--navBarColor);
+        color: var(--hgColor);
+        padding: 5px;
+    }
+
+    h3.pageTitle {
+        background-color: var(--navBarColor);
+        color: var(--hgColor);
+        margin-bottom: 20px;
+        border-top: 5px solid var(--secondaryColor);
+        border-bottom: 5px solid var(--secondaryColor);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        background-color: var(--secondaryColor);
+        border-radius: 10px;
+        padding: 20px 30px;
+        margin: auto;
+        margin-bottom: 50px;
+        align-items: center;
+        color: var(--hgColor)
+    }
+
+    label {
+        display: block;
+        font-family: var(--generalFont);
+        font-weight: bold;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    input,
+    textarea {
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 150px;
+        background-color: var(--navBarColor);
+        color: white;
+        margin: 5px;
+        border-color: var(--secondaryColor);
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        background-color: red;
+        color: var(--hgColor);
+        margin: 5px;
+        border-color: var(--secondaryColor);
+    }
+
+    section {
+        padding-bottom: 30px;
+        display: block;
+        text-align: center;
+    }

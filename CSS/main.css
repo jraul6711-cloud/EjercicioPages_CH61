@@ -1,9 +1,5 @@
-/*
-Estilos personalizados
-*/
 
 html {
-  /* utilizar variables */
 
   --fontTitle: "Raleway", sans-serif;
   --generalFont: "Roboto Condensed", sans-serif;
@@ -15,8 +11,6 @@ html {
   --titleCardColor: lightgrey;
   height: 300vh;
 }
-
-/* Color del body*/
 
 body {
   background-color: var(--bgColor);
@@ -40,11 +34,6 @@ body {
   /* esto no se que significa xd */
 }
 
-/* .navbar-nav {
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 nav.navbar {
   background-color: var(--navBarColor) !important;
   display: flex !important;
@@ -53,7 +42,6 @@ nav.navbar {
 }
 
 nav#navBar {
-  /* background-color: var(--primaryColor); */
   display: grid;
   grid-template-columns: auto auto auto;
   align-items: center;
@@ -81,7 +69,6 @@ a {
   font-size: 20px;
   color: var(--hgColor);
   text-decoration: none;
-  /* background-color: var(--hgColor); */
   padding: 5px;
   border-radius: 5px;
 }
@@ -126,11 +113,6 @@ a.btn:hover {
   font-size: 20px;
 }
 
-/*
-Estilo estandar para tarjetas de productos
-*/
-
-/* Carousel */
 div#carouselExample {
   display: flex;
   height: 600px;
@@ -140,7 +122,6 @@ div#carouselExample {
 }
 
 div.cardProducts {
-  /*background-color: var(--secondaryColor);*/
   width: 300px;
   margin: auto;
   border-radius: 10px;
@@ -149,9 +130,15 @@ div.cardProducts {
   align-content: center;
 }
 
-div.container,
 div.row,
-div.col-sm,
+div.col-sm {
+  background-color: var(--bgColor);
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+div.container,
 div.card-body {
   background-color: var(--bgColor);
   text-align: center;
@@ -164,18 +151,12 @@ p.card-text {
   margin-bottom: 20px;
 }
 
-/*img {
-    display: block;
-    margin: auto;
-}*/
-
 h2.pageTitle {
   background-color: var(--navBarColor);
   color: var(--hgColor);
-  padding: 10px;
-  margin: 0px;
   border-top: 5px solid var(--secondaryColor);
   border-bottom: 5px solid var(--secondaryColor);
+  padding: 5px
 }
 
 a#Aviso {

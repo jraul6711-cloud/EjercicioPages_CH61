@@ -1,0 +1,173 @@
+
+html {
+
+    --fontTitle: "Raleway", sans-serif;
+    --generalFont: "Roboto Condensed", sans-serif;
+    --bgColor: black;
+    --navBarColor: crimson;
+    --hgColor: #fff8d4;
+    --primaryColor: #a3b087;
+    --secondaryColor: #435663;
+    --titleCardColor: lightgrey;
+    height: 250vh;
+}
+
+body {
+    background-color: var(--bgColor);
+}
+
+.pageTitle {
+    background-color: var(--bgColor);
+    font-family: var(--fontTitle);
+    color: var(--hgColor);
+    text-align: center;
+}
+
+#mainTitle {
+    font-size: 50px;
+}
+
+.navbar .navbar-brand {
+    position: relative;
+    left: 10%;
+    transform: translateX(-50%);
+    /* esto no se que significa xd */
+}
+
+nav.navbar {
+    background-color: var(--navBarColor) !important;
+    display: flex !important;
+    border-top: 5px solid var(--secondaryColor);
+    border-bottom: 5px solid var(--secondaryColor);
+}
+
+nav#navBar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+ul.nav-link {
+    list-style: none;
+    background-color: var(--bgColor);
+}
+
+ul.navbar-nav {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul#navLinks {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: end;
+}
+
+a {
+    font-size: 20px;
+    color: var(--hgColor);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a.navbar-brand {
+    background-color: var(--secondaryColor);
+    color: var(--hgColor) !important;
+    font-size: 30px;
+    padding: 10px;
+}
+
+a.nav-link {
+    color: var(--hgColor) !important;
+    font-size: 20px;
+    padding: 10px;
+}
+
+a:hover {
+    font-size: 25px;
+    padding: 10px;
+}
+
+a.nav-link:hover {
+    color: var(--hgColor) !important;
+    font-size: 25px;
+    padding: 10px;
+}
+
+a.navbar-brand:hover {
+    font-size: 35px;
+    padding: 10px;
+}
+
+a.btn {
+    background-color: var(--navBarColor);
+    border-color: blueviolet;
+}
+
+a.btn:hover {
+    background-color: red;
+    border-color: fuchsia;
+    font-size: 20px;
+}
+
+div.row,
+div.col-sm {
+    background-color: var(--bgColor);
+    text-align: center;
+    border-radius: 20px;
+}
+
+div.container,
+div.card-body {
+    background-color: var(--bgColor);
+    text-align: center;
+}
+
+h5.card-title,
+p.card-text {
+    text-align: center;
+    color: var(--titleCardColor);
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
+h2.pageTitle {
+    background-color: var(--navBarColor);
+    color: var(--hgColor);
+    border-top: 5px solid var(--secondaryColor);
+    border-bottom: 5px solid var(--secondaryColor);
+    padding: 5px 
+}
+
+a#Aviso {
+    background-color: var(--navBarColor);
+    color: var(--hgColor);
+    padding: 5px;
+}
+
+h3.pageTitle {
+    background-color: var(--navBarColor);
+    color: var(--hgColor);
+    margin-bottom: 20px;
+    border-top: 5px solid var(--secondaryColor);
+    border-bottom: 5px solid var(--secondaryColor);
+}
+
+h1,
+li,
+p {
+    font-family: var(--generalFont);
+    text-align: center;
+}
+
+section {
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+}

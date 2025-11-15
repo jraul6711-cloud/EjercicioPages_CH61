@@ -1,24 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./CSS/productos.css">
+    <link rel="icon" href="./assets/music logo.png" />
 
-    <link rel="stylesheet" href="./CSS/main.css">
-
-    <style>
-        table, td, th {
-            border: 1px solid white;
-            align-items: center;
-            margin: auto;
-        }
-    </style>
 </head>
-<body>
-    <h1>Poductos</h1>
 
-<main>
+<body>
+    <h1 class="pageTitle">Productos</h1>
+
+    <!-- Barra de navegación -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./carrito.html">Carrito de compras</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section>
+        <h2 class="pageTitle">¡Aprovecha las ofertas!</h2>
+        <img src="" />
+    </section>
+
+    <!-- Sección de productos Bootstrap -->
+    <div class="container my-5">
+        <div class="row">
+
+            <div class="col-sm border">
+                <div class="card mx-auto my-5" style="width: 18rem">
+                    <img src="./assets/kittieAlbum2.jpg" class="card-img-top" alt="Spit" />
+                    <div class="card-body">
+                        <h5 class="card-title">Spit</h5>
+                        <p class="card-text">Spit - Kittie (2000)</p>
+                        <a target="_blank" href="https://www.amazon.com.mx/Spit/dp/B00004R7ZL"
+                            class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm border">
+                <div class="card mx-auto my-5" style="width: 18rem">
+                    <img src="./assets/robZombieAlbum1.jpg" class="card-img-top" alt="Hellbilly" />
+                    <div class="card-body">
+                        <h5 class="card-title">Hellbilly Deluxe</h5>
+                        <p class="card-text">Hellbilly Deluxe - Rob Zombie</p>
+                        <a target="_blank"
+                            href="https://articulo.mercadolibre.com.mx/MLM-2474406665-lp-de-lujo-de-rob-zombie-hellbilly-_JM"
+                            class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm border">
+                <div class="card mx-auto my-5" style="width: 18rem">
+                    <img src="./assets/slipAlbum1.jpg" class="card-img-top" alt="Iowa" />
+                    <div class="card-body">
+                        <h5 class="card-title">Iowa</h5>
+                        <p class="card-text">Iowa - Slipknot (2001)</p>
+                        <a target="_blank"
+                            href="https://www.amazon.com.mx/Iowa-Slipknot/dp/B00005A46T?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=AVDBXBAVVSXLQ"
+                            class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm border">
+                <div class="card mx-auto my-5" style="width: 18rem">
+                    <img src="./assets/kornAlbum1.jpg" class="card-img-top" alt="Issues" />
+                    <div class="card-body">
+                        <h5 class="card-title">Issues</h5>
+                        <p class="card-text">Issues - Korn (1998)</p>
+                        <a target="_blank"
+                            href="https://www.mercadolibre.com.mx/korn-issues-disco-cd-16-canciones/up/MLMU910645230"
+                            class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm border">
+                <div class="card mx-auto my-5" style="width: 18rem">
+                    <img src="./assets/limpBizkitAlbum1.jpg" class="card-img-top" alt="Issues" />
+                    <div class="card-body">
+                        <h5 class="card-title">Significant Other</h5>
+                        <p class="card-text">Significant Other - Limp Bizkit</p>
+                        <a target="_blank"
+                            href="https://www.amazon.com.mx/s?k=limp+bizkit+significant+other&adgrpid=114929217284&hvadid=589460576773&hvdev=c&hvlocphy=9047095&hvnetw=g&hvqmt=e&hvrand=17011329898662762315&hvtargid=kwd-301214522618&hydadcr=19281_13397777&mcid=a20e8f69fe2332aab8c7d8ece2b91193&tag=googhydr0mx-20&ref=pd_sl_1l5yz4ltp7_e"
+                            class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm border">
+                <div class="card mx-auto my-5" style="width: 18rem">
+                    <img src="./assets/deftonesAlbum1.jpg" class="card-img-top" alt="Issues" />
+                    <div class="card-body">
+                        <h5 class="card-title">Diamond Eyes</h5>
+                        <p class="card-text">Diamond eyes - Deftones (2010)</p>
+                        <a target="_blank" href="https://www.amazon.com.mx/Diamond-Eyes-CD-Deftones/dp/B09RQDLQSX"
+                            class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Si tienes más productos, ponlos aquí debajo y Bootstrap seguirá 3 columnas en automático -->
+
+        </div>
+    </div>
+
+
+    <!-- Pie de pagina -->
+    <footer>
+        <section>
+            <h3 class="pageTitle">Redes sociales</h3>
+            <ul class="nav-link">
+                <li>
+                    <a href="www.linkedin.com/in/adrian-bringas-77274224a" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="blank">Instagram</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h4 class="pageTitle">
+                <a id="Aviso" href="https://www.netafim.com.mx/aviso-de-privacidad2/" target="blank">Aviso de
+                    privacidad</a>
+            </h4>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+    <main>
         <table>
 
             <thead>
@@ -62,20 +212,6 @@
 
     </main>
 
-    <!-- Pie de pagina -->
- <footer>
-    <section>
-        <h4 class="pageTitle">Contactanos</h4>
-    </section>
-
-    <section>
-        <h4 class="pageTitle">Redes sociales</h4>
-    </section>
-
-    <section>
-        <h4 class="pageTitle">Aviso de privacidad</h4>
-    </section>
- </footer>
-
 </body>
+
 </html>
