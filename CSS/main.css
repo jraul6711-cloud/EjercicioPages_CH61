@@ -32,11 +32,14 @@ body {
 #mainTitle {
   font-size: 50px;
 }
+
 .navbar .navbar-brand {
   position: relative;
   left: 10%;
-  transform: translateX(-50%); /* esto no se que significa xd */
+  transform: translateX(-50%);
+  /* esto no se que significa xd */
 }
+
 /* .navbar-nav {
   margin-left: auto;
   margin-right: auto;
@@ -45,11 +48,12 @@ body {
 nav.navbar {
   background-color: var(--navBarColor) !important;
   display: flex !important;
-  border: 5px solid var(--secondaryColor);
+  border-top: 5px solid var(--secondaryColor);
+  border-bottom: 5px solid var(--secondaryColor);
 }
 
 nav#navBar {
-  background-color: var(--primaryColor);
+  /* background-color: var(--primaryColor); */
   display: grid;
   grid-template-columns: auto auto auto;
   align-items: center;
@@ -121,6 +125,7 @@ a.btn:hover {
   border-color: fuchsia;
   font-size: 20px;
 }
+
 /*
 Estilo estandar para tarjetas de productos
 */
@@ -158,23 +163,33 @@ p.card-text {
   color: var(--titleCardColor);
   margin-bottom: 20px;
 }
+
 /*img {
     display: block;
     margin: auto;
 }*/
 
-h2.pageTitle,
-a#Aviso {
+h2.pageTitle {
   background-color: var(--navBarColor);
   color: var(--hgColor);
   padding: 10px;
   margin: 0px;
+  border-top: 5px solid var(--secondaryColor);
+  border-bottom: 5px solid var(--secondaryColor);
 }
-h3.pageTitle {
-    background-color: var(--navBarColor);
+
+a#Aviso {
+  background-color: var(--navBarColor);
   color: var(--hgColor);
-  margin: 0px;
-  margin: 20px
+  padding: 5px;
+}
+
+h3.pageTitle {
+  background-color: var(--navBarColor);
+  color: var(--hgColor);
+  margin-bottom: 20px;
+  border-top: 5px solid var(--secondaryColor);
+  border-bottom: 5px solid var(--secondaryColor);
 }
 
 h1,
