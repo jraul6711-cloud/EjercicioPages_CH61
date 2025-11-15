@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <style>
+        table, td, th {
+            border: 1px solid white;
+            align-items: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Carrito de compras</h1>
+    <p>Inserte aqui una tabla</p>
+  <!-- Barra de navegación -->
+    <header>
+        <nav id="navBar">
+            <img src="./assets/POPPY gala.jpg" alt="POPUTONA" width="500">
+            <h2 class="pageTitle">Mi pagina web</h2>
+            <ul id="navLinks">
+                <li class="navBarItem"><a href="./index.html">Inicio</a></li>
+                <li class="navBarItem"><a href="./productos.html">Producto</a></li>
+                <li class="navBarItem"><a href="./carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Id. Producto</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>CPU core i5</td>
+                    <td>1</td>
+                    <td>$1,000.00</td>
+                </tr>
+
+                <tr>
+                    <td>2002</td>
+                    <td>GPU RTX 5090</td>
+                    <td>2</td>
+                    <td>$3400.00</td>
+                </tr>
+
+                <tr>
+                    <td>3003</td>
+                    <td>Monitor 144hz</td>
+                    <td>1</td>
+                    <td>$4000.00</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Total: </td>
+                    <td colspan="3" style="text-align: end">$9,000.00</td>
+                </tr>
+            </tfoot>
+
+    </main>
+</body>
+
+</html>

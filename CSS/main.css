@@ -1,0 +1,191 @@
+/*
+Estilos personalizados
+*/
+
+html {
+  /* utilizar variables */
+
+  --fontTitle: "Raleway", sans-serif;
+  --generalFont: "Roboto Condensed", sans-serif;
+  --bgColor: black;
+  --navBarColor: crimson;
+  --hgColor: #fff8d4;
+  --primaryColor: #a3b087;
+  --secondaryColor: #435663;
+  --titleCardColor: lightgrey;
+  height: 300vh;
+}
+
+/* Color del body*/
+
+body {
+  background-color: var(--bgColor);
+}
+
+.pageTitle {
+  background-color: var(--bgColor);
+  font-family: var(--fontTitle);
+  color: var(--hgColor);
+  text-align: center;
+}
+
+#mainTitle {
+  font-size: 50px;
+}
+.navbar .navbar-brand {
+  position: relative;
+  left: 10%;
+  transform: translateX(-50%); /* esto no se que significa xd */
+}
+/* .navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+nav.navbar {
+  background-color: var(--navBarColor) !important;
+  display: flex !important;
+  border: 5px solid var(--secondaryColor);
+}
+
+nav#navBar {
+  background-color: var(--primaryColor);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+
+ul.nav-link {
+  list-style: none;
+  background-color: var(--bgColor);
+}
+
+ul.navbar-nav {
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul#navLinks {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: end;
+}
+
+a {
+  font-size: 20px;
+  color: var(--hgColor);
+  text-decoration: none;
+  /* background-color: var(--hgColor); */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+a.navbar-brand {
+  background-color: var(--secondaryColor);
+  color: var(--hgColor) !important;
+  font-size: 30px;
+  padding: 10px;
+}
+
+a.nav-link {
+  color: var(--hgColor) !important;
+  font-size: 20px;
+  padding: 10px;
+}
+
+a:hover {
+  font-size: 25px;
+  padding: 10px;
+}
+
+a.nav-link:hover {
+  color: var(--hgColor) !important;
+  font-size: 25px;
+  padding: 10px;
+}
+
+a.navbar-brand:hover {
+  font-size: 35px;
+  padding: 10px;
+}
+
+a.btn {
+  background-color: var(--navBarColor);
+  border-color: blueviolet;
+}
+
+a.btn:hover {
+  background-color: red;
+  border-color: fuchsia;
+  font-size: 20px;
+}
+/*
+Estilo estandar para tarjetas de productos
+*/
+
+/* Carousel */
+div#carouselExample {
+  display: flex;
+  height: 600px;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+
+div.cardProducts {
+  /*background-color: var(--secondaryColor);*/
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 25px;
+  text-align: center;
+  align-content: center;
+}
+
+div.container,
+div.row,
+div.col-sm,
+div.card-body {
+  background-color: var(--bgColor);
+  text-align: center;
+}
+
+h5.card-title,
+p.card-text {
+  text-align: center;
+  color: var(--titleCardColor);
+  margin-bottom: 20px;
+}
+/*img {
+    display: block;
+    margin: auto;
+}*/
+
+h2.pageTitle,
+a#Aviso {
+  background-color: var(--navBarColor);
+  color: var(--hgColor);
+  padding: 10px;
+  margin: 0px;
+}
+h3.pageTitle {
+    background-color: var(--navBarColor);
+  color: var(--hgColor);
+  margin: 0px;
+  margin: 20px
+}
+
+h1,
+li,
+p {
+  font-family: var(--generalFont);
+  text-align: center;
+}
+
+section {
+  padding-bottom: 30px;
+  display: block;
+  text-align: center;
+}

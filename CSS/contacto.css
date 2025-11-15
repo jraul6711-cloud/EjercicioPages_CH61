@@ -1,0 +1,73 @@
+html {
+    /* utilizar variables */
+
+    --fontTitle:"Raleway", sans-serif;
+    --generalFont:"Roboto Condensed", sans-serif;
+    --bgColor: #313647;
+    --hgColor: #FFF8D4;
+    --primaryColor:#A3B087;
+    --secondaryColor: #435663;
+    height: 300vh;
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--hgColor)
+}
+
+.pageTitle {
+    background-color:var(--bgColor);
+    font-family: var(--fontTitle);
+    color:var(--hgColor);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-family: var(--generalFont);
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+button {
+    width: 100px;
+    background-color: var(--hgColor);
+    color:black;
+    border: none;
+    padding: 10px;
+}
+
+section {
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+}
+
+h1, li, p , a {
+    font-family: var(--generalFont);
+    text-align: center;
+    color: var(--hgColor);
+}
+
+a:hover {
+    font-size: 20px;
+    padding: 10px;
+}
